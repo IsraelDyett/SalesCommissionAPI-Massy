@@ -1,0 +1,226 @@
+[
+  {
+    "ContainingType": "SalesCommissionsAPI.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "SalesCommissionsAPI.Models.LoginModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SalesCommissionsAPI.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "SalesCommissionsAPI.Models.RegisterModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SalesCommissionsAPI.Controllers.SMSSController",
+    "Method": "GetAllSMSS",
+    "RelativePath": "api/SMSS",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[SalesCommissionsAPI.Models.SMSS, SalesCommissionsAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SalesCommissionsAPI.Controllers.SMSSController",
+    "Method": "CreateSMSS",
+    "RelativePath": "api/SMSS",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "smss",
+        "Type": "SalesCommissionsAPI.Models.SMSS",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SalesCommissionsAPI.Models.SMSS",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SalesCommissionsAPI.Controllers.SMSSController",
+    "Method": "GetSMSS",
+    "RelativePath": "api/SMSS/{Salesrep}/{Year}/{Cmth}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Salesrep",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "Year",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Cmth",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SalesCommissionsAPI.Models.SMSS",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SalesCommissionsAPI.Controllers.SMSSController",
+    "Method": "UpdateSMSS",
+    "RelativePath": "api/SMSS/{Salesrep}/{Year}/{Cmth}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Salesrep",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "Year",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Cmth",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "smss",
+        "Type": "SalesCommissionsAPI.Models.SMSS",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SalesCommissionsAPI.Controllers.SMSSController",
+    "Method": "DeleteSMSS",
+    "RelativePath": "api/SMSS/{Salesrep}/{Year}/{Cmth}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Salesrep",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "Year",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Cmth",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SalesCommissionsAPI.Controllers.SMSSController",
+    "Method": "CreateOrUpdateMultipleSMSS",
+    "RelativePath": "api/SMSS/bulk",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "smssList",
+        "Type": "System.Collections.Generic.List\u00601[[SalesCommissionsAPI.Models.SMSS, SalesCommissionsAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SalesCommissionsAPI.Controllers.SMSSController",
+    "Method": "DeleteMultipleSMSS",
+    "RelativePath": "api/SMSS/bulk",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "smssList",
+        "Type": "System.Collections.Generic.List\u00601[[SalesCommissionsAPI.Models.SMSS, SalesCommissionsAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SalesCommissionsAPI.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[SalesCommissionsAPI.WeatherForecast, SalesCommissionsAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

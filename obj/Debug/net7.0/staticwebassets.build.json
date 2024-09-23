@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "HzIoIoix3GxO1OpahBjYK+lqyNXDPT6qfdOAnSVxfno=",
+  "Source": "SalesCommissionsAPI",
+  "BasePath": "_content/SalesCommissionsAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
